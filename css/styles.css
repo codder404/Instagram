@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-wrapper,
+.left-aside,
+.group,
+.get-the-app,
+.download {
+  display: flex;
+  align-items: center;
+}
+
+.left-aside,
+.group {
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container-wrapper {
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.left-aside {
+  justify-content: center;
+  width: 50%;
+}
+
+.left-aside img {
+  height: 50rem;
+}
+
+.aside-content {
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group {
+  background: #fff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  margin-top: 1rem;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile img {
+  height: 6rem;
+}
+
+.login {
+  background: #0095f6;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.login:hover {
+  filter: brightness(90%);
+}
+
+.remove-account {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link {
+  color: #0095f6;
+}
+
+.get-the-app {
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download {
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem;
+}
+
+.app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('../images/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+  background-image: url('../images/googleplay-button.png');
+}
+
+@media (max-width: 1024px) {
+  .container-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background: #fff;
+  }
+
+  .container-wrapper {
+    width: 90%;
+  }
+
+  .left-aside {
+    display: none;
+  }
+
+  .aside-content {
+    width: 100%;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+}
+
+footer .footer-content,
+nav,
+span {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+footer nav li {
+  margin: .4rem;
+}
+
+footer nav li a {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer span {
+  margin-left: 3rem;
+  color: #222;
+  font-weight: 700;
+  text-transform: uppercase;
+}
